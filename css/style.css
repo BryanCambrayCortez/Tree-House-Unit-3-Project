@@ -43,14 +43,12 @@ fieldset {
 .one {
 	background-color: black;
 	height: 5px;
-	width: 100%;
 	margin-bottom: 2px;
 }
 
 .two {
 	background-color: black;
 	height: 3px;
-	width: 100%;
 	margin-top: 1px;
 }
 
@@ -76,20 +74,24 @@ select
 {
   background-color:#e6fff5;
   color: black;
-  width: 70%;
-  height: 50px;
+  height:50px;
+  width: 100%;
   border-radius: 10px;
   font-family: 'Nanum Brush Script', cursive;
   font-size: 25px;
 }
 
-input[type="text"],
-input[type="email"],
-input[type="tel"],
-select,
-textarea,:focus {
-	border: 2px solid black;
+
+
+input[type="text"]:focus,
+input[type="email"]:focus,
+input[type="tel"]:focus,
+input[type="address"]:focus,
+select:focus,
+textarea:focus {
+	background-color: #4dffc3;
 }
+
 
 label {
 	cursor: pointer;
@@ -134,32 +136,27 @@ footer {
 
 @media(min-width: 768px) {
 
-legend {
-	margin-left: 25px;
+input[type="text"],
+input[type="email"],
+input[type="tel"],
+select
+{
+  max-width: 70%;
 }
 
 .container {
-	display: flex;
-	flex-direction: column;
-	text-align: left;
-	margin: auto;
 	width: 70%;
-	margin-bottom: 300px;
+	margin-top: 100px;
 }
 
-
 .container_item {
+	display: flex;
 	flex-direction: row;
 	justify-content: space-between;
-	margin-left: 50px;
-	width: 70%;
 } 
 
 
-.container_item_two {
-	margin-left: 50px;
 
-}
 
 }
 
